@@ -9,6 +9,7 @@ const RecipeCardSummary = ({ recipe }) => {
                     title={recipe.recipe.label}
                     image={recipe.recipe.image} 
                     calories={Math.round(recipe.recipe.calories)}
+                    ingredients={recipe.recipe.ingredients}
                 />
 
         )

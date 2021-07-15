@@ -89,10 +89,10 @@ render () {
                   </Formik>
                   </div>
                   {this.state.recipe === "" && this.state.currentImage !== "" && (
-                                        <section className="text-gray-600 body-font ">
+                                        <section className="text-gray-600 font-body ">
                                         <div className="container px-5 py-24 mx-auto flex justify-center align-center">
                                           <div className="sm:w-1/2 mb-10 px-4">
-                                          <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3 text-center font-body">Type ingredients to demolish your hunger!!</h2>
+                                          <h2 className="text-2xl font-medium text-gray-900 mt-6 mb-3 text-center font-body">Type ingredients to demolish your hunger!!</h2>
                                             <div className="rounded-lg h-100 overflow-hidden">
                                               <Image src={this.state.currentImage} alt="content" className="object-cover object-center h-full w-full" placeholder="blur" />
                                             </div>
