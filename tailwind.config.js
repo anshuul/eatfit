@@ -11,7 +11,8 @@ module.exports = {
         secondaryHover: "#FFD6DE"
       },
       fontFamily: {
-        title: ["Atma"]
+        title: ["Atma"],
+        body: ["Poppins"]
       }
     },
   },
