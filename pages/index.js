@@ -14,8 +14,7 @@ import Loader from "../components/Loader/loader";
 import Head from "next/head";
 import Meta from "../components/MetaTags/meta"
 
-const APP_ID = process.env.NEXT_PUBLIC_APP_ID;
-const APP_KEY = process.env.NEXT_PUBLIC_APP_KEY;
+
 
 const validationSchema = object().shape({
     ingredient: string()
@@ -24,6 +23,8 @@ const validationSchema = object().shape({
   });
   const images = [Food1, Food2, Food3, Food4, Food5];
 const Home = () =>  {
+  const APP_ID = process.env.NEXT_PUBLIC_APP_ID;
+const APP_KEY = process.env.NEXT_PUBLIC_APP_KEY;
 /*     state = {
         recipe: [],
         currentImage: "",
