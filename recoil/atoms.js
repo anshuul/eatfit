@@ -5,7 +5,3 @@ export const recipeState = atom({
     default: [],
 })
 
-export const recipeFromApiState = atom({
-    key: "recipeFromApi",
-    default: []
-})

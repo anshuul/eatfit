@@ -12,6 +12,8 @@ import Food4 from "../public/assets/food4.png";
 import Food5 from "../public/assets/food5.png";
 import Loader from "../components/Loader/loader";
 import env from "../env";
+import Head from "next/head";
+import Meta from "../components/MetaTags/meta"
 
 const APP_ID = env.APP_ID;
 const APP_KEY = env.APP_KEY;
@@ -62,7 +64,7 @@ const Home = () =>  {
     let result = await axios.get(`https://api.edamam.com/search?q=${values.ingredient}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=20`);
 
     if(result.status == 200){
-      console.log(result.status);
+      console.log(result);
       setRecipe(result.data.hits)
     }else{
       console.log(result.statusText);
@@ -83,6 +85,20 @@ const Home = () =>  {
 
   return (
     <>
+    <Head>
+    <title>EatFit</title>
+        <Meta
+          title="EatFit"
+          description="Eatfit is a recipe searching application made with ReactJS, Next.js, and TailwindCSS with data from Edamam API."
+          /* URL="https://movies.sanketnaik.dev/" */
+          imageURL="https://firebasestorage.googleapis.com/v0/b/skribble-ae793.appspot.com/o/EatFit%2Flogo.png?alt=media"
+        />
+        <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/skribble-ae793.appspot.com/o/EatFit%2Flogo.png?alt=media" />
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="manifest" href="/manifest.json" />
+    </Head>
     {!isLoading && (
                 <div className="mt-10 w-10/12 m-auto">
                 <Formik
@@ -139,7 +155,7 @@ const Home = () =>  {
               )}
 
 
-                {recipe && ( 
+                {recipe.length !==0 && ( 
                         <section className="text-gray-600 body-font">
                           <div className="container px-5 py-24 mx-auto">
                             <div className="flex flex-wrap -m-4">

@@ -1,16 +1,28 @@
 import { useRouter } from "next/dist/client/router";
 import { useRecoilState } from "recoil";
-import { recipeState } from "../../recoil/atoms"
+import { recipeState } from "../../recoil/atoms";
+import Head from "next/head";
+import Meta from "../../components/MetaTags/meta"
 
 const Item = () => {
   const [recipe, setRecipe] = useRecoilState(recipeState);
-  console.log(recipe.ingredients);
+  console.log(recipe);
 /*   console.log(recipe.title, recipe.calories, recipe.image)
   console.log(recipe.ingredients) */
 
 
     return(
         <>
+        <Head>
+          <title>
+            {recipe.title}
+          </title>
+          < Meta 
+            title={recipe.title}
+            description={recipe.title}
+            imageURL={recipe.image}
+          />
+        </Head>
         <section className="text-gray-600 body-font mt-28">
   <div className="container px-5 py-24 mx-auto flex flex-col">
     <div className="lg:w-4/6 mx-auto">
