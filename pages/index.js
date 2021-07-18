@@ -11,12 +11,11 @@ import Food3 from "../public/assets/food3.png";
 import Food4 from "../public/assets/food4.png";
 import Food5 from "../public/assets/food5.png";
 import Loader from "../components/Loader/loader";
-import env from "../env";
 import Head from "next/head";
 import Meta from "../components/MetaTags/meta"
 
-const APP_ID = env.APP_ID;
-const APP_KEY = env.APP_KEY;
+const APP_ID = process.env.NEXT_PUBLIC_APP_ID;
+const APP_KEY = process.env.NEXT_PUBLIC_APP_KEY;
 
 const validationSchema = object().shape({
     ingredient: string()

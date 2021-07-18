@@ -4,10 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-env.js
 workbox-ea903bce.js
 sw.js
-
+.env
 # testing
 /coverage
 
