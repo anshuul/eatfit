@@ -1,7 +1,9 @@
+import Link from "next/link";
 import RecipeCard from "../RecipeCard/RecipeCard"
 
 const RecipeCardSummary = ({ recipe }) => {
     console.log(recipe);
+    /* if (recipe.length !== 0) return <Link href="/"/> */
     return recipe.map((r, index) => {
         return (
 

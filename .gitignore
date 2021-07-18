@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 env.js
+workbox-ea903bce.js
+sw.js
 
 # testing
 /coverage
