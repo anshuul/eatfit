@@ -110,14 +110,14 @@ const APP_KEY = process.env.NEXT_PUBLIC_APP_KEY;
                              <form onSubmit={handleSubmit}>
                                <label
                                  htmlFor="hero-field"
-                                 className="leading-7 text-sm text-gray-600"
+                                 className="leading-7 text-sm text-gray-600 dark:text-gray-100"
                                >
                                  Enter ingredient
                                </label>
                                <Field
                                  type="text"
                                  name="ingredient"
-                                 className="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-secondary focus:bg-transparent border border-gray-300 focus:border-secondary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                 className="w-full dark:text-gray-100 bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded focus:ring-2 focus:ring-secondary focus:bg-transparent border border-gray-300 focus:border-secondary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                />
                                {errors.ingredient && touched.ingredient ? (
                                  <p className="text-red-600 text-sm">{errors.ingredient}</p>

@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="text-gray-600 dark:bg-gray-900 border-t-2 border-gray-200 dark:border-gray-700 body-font transition-all duration-500 ease-out">
       <div className="container px-5 pt-8 pb-4 mx-auto flex items-center justify-end sm:flex-row flex-col">
         <div className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <span className="ml-8 text-3xl font-title">EatFit</span>
+        <span className="ml-8 text-3xl font-title text-gray-900 dark:text-gray-100">EatFit</span>
         </div>
         <p className="text-md text-gray-500 dark:text-gray-100 color-transition sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:mt-0 mt-4">
           Made by

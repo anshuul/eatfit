@@ -1,6 +1,7 @@
-import 'tailwindcss/tailwind.css'
+
 import Layout from '../components/Layout/Layout'
 import "../styles/global.css";
+import 'tailwindcss/tailwind.css'
 import { RecoilRoot } from "recoil"
 
 function MyApp({ Component, pageProps }) {
