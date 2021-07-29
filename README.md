@@ -1,29 +1,50 @@
-# Next.js + Tailwind CSS Example
+![React Pokedex](docs/images/github-banner.png)
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+# EatFit
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+![Website](https://img.shields.io/website?logo=React&style=for-the-badge&url=https%3A%2F%2Fpokedex.sanketnaik.dev) &nbsp;&nbsp; [![Netlify Status](https://api.netlify.com/api/v1/badges/ede00c86-b1c3-4c5b-b6cd-495db637b6d6/deploy-status)](https://app.netlify.com/sites/distracted-wozniak-d6cf13/deploys)
 
-## Preview
+## Contents
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+- [Technologies Used](#technologies-used)
+- [Introduction](#introduction)
+- [Home Page](#home-page)
+  - [Home Page - Recipe Loaded](#home-page-recipe)
+- [Recipe Card Page](#recipe-card-page)
+- [Dark Mode](#dark-mode)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Technologies Used <a name="technologies-used"></a>
 
-## Deploy your own
+| Name        | Description |
+| ----------- | ---------------- |
+| Next.js     | An open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications. |
+| TailwindCSS | A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup. |
+| Edamam API    | An API to provide recipe information from ingredients and much, much more.|
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Introduction <a name="introduction"></a>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+This is a simple Recipe application created using Next.js which is a React Framework for production. Next.js has various features that make it the ideal choice for a website with great SEO (Search Engine Optimization) and performance. Static Site Generation is a feature that Next.js comes with and it is great for generating webpages which have static content.
 
-## How to use
+## Home Page <a name="home-page"></a>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+![Home Page](docs/images/home-page-light.png)
+The HomePage displays an input field for the user to provide any ingredient they like to get the respective recipe. The website uses TailwindCSS for styling and each pokemon and its details are displayed in a card. Additionally, when the data is being loaded, skeleton cards are displayed as placeholders. This helps to improve the first-paint performance of the application.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### Home Page - Recipe Loaded <a name="home-page-recipe"></a>
+![Home Page](docs/images/home-light-recipe.png)
+When the user provides an ingredient, the website looks up for recipe for the respective ingredient by using the Edamam API and then displays 20 recipes for the ingredient.The website uses TailwindCSS for styling and each recipe and its details are displayed in a card. 
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+## Recipe Card Page <a name="recipe-card-page"></a>
+
+![Generation List](docs/images/recipe-card-page.png)
+This page displays a card which contains the image of the dish, the name of the recipe, total calories of the recipe and the ingredients required for preparing the respective recipe.
+
+
+## Dark Mode <a name="dark-mode"></a>
+
+TailwindCSS 2.0 includes features for implementing dark mode for applications and this has been used to make the entire application dark mode compatible. When the user taps on the dark mode toggle, all elements of the website transition from a light theme to a dark theme with a smooth transition animation. The screenshots of all pages in dark mode are provided below.
+
+![Dark Home Page](docs/images/home-page-dark.png)
+![Dark Home Page Recipe Loaded](docs/images/home-dark-recipe.png)
+![Dark Recipe Card Page](docs/images/recipe-card-page-dark.png)
