@@ -20,7 +20,7 @@ const RecipeCard = (props) => {
 
     return (
 
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="xl:w-1/4 md:w-1/2 s:w-full xs:w-full p-4">
                 <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
                     <img className="h-40 rounded w-full object-cover object-center mb-6" src={props.image} alt={props.title} />
                     <h4 className="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-1">{props.title}</h4>
