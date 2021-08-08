@@ -2,7 +2,7 @@
 
 # EatFit
 
-![Website](https://img.shields.io/website?logo=React&style=for-the-badge&url=https%3A%2F%2Fpokedex.sanketnaik.dev) &nbsp;&nbsp; [![Netlify Status](https://api.netlify.com/api/v1/badges/ede00c86-b1c3-4c5b-b6cd-495db637b6d6/deploy-status)](https://app.netlify.com/sites/distracted-wozniak-d6cf13/deploys)
+[![Website](https://img.shields.io/badge/website-up-green?style=for-the-badge&logo=react&url?url=https%3A%2F%2Featfit.theoctagon.in)](https://eatfit.theoctagon.in/) &nbsp;&nbsp; [![Netlify Status](https://api.netlify.com/api/v1/badges/ede00c86-b1c3-4c5b-b6cd-495db637b6d6/deploy-status)](https://app.netlify.com/sites/distracted-wozniak-d6cf13/deploys)
 
 ## Contents
 
