@@ -1,4 +1,4 @@
-![React Pokedex](docs/images/github-banner.png)
+![EatFit](docs/images/github-banner.png)
 
 # EatFit
 
